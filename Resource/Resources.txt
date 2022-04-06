@@ -8,3 +8,4 @@ Resource          ./PageObject/TestData/TestData.robot
 Resource          ./PageObject/Keywords/KeywordsSignIn.robot
 Resource          ./PageObject/Keywords/KeywordIncreaseProduct.robot
 Resource          ./PageObject/Keywords/KeywordCreateAccount.robot
+Resource          ./PageObject/Keywords/KeywordsDeleteProduct.robot

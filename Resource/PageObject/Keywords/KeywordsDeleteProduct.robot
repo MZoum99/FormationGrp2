@@ -12,7 +12,7 @@ Verifier l'apparition des elts
     Wait Until Element Is Visible    ${titre}
     Wait Until Element Is Visible    ${prix}
     Wait Until Element Is Visible    ${lien_suppr}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/panier_supprimer.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/panier_supprimer.png
 
 Cliquer sur le lien Supprimer
     [Documentation]    Keyword qui clique sur le lien supprimer
@@ -25,12 +25,12 @@ Verifier l'apparition d'element
 Cliquer sur le bouton retirer
     [Documentation]    Keyword qui clique sur le bouton retirer
     Click Element    ${btn_retirer}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/delete_supprimer.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/delete_supprimer.png
 
 Verifier l'apparition du msg
     [Documentation]    Keyword qui verifie l'apparition du message.
     Wait Until Element Is Visible    ${msg_supp}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/msg_supprimer.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/msg_supprimer.png
 
 Supprimer un produit
     Cliquer sur le bouton panier

@@ -7,18 +7,18 @@ Cliquer sur lien
     Open Browser    ${url_creation1}    Chrome
     maximize browser window
     Go To    ${url_creation1}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/signup_creation.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/signup_creation.png
 
 Cocher la première case
     [Documentation]    Keywords qui coche la premiere case
     Click Element    ${case_accepter1}
     Click Button    ${xpath_button}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/casecochée_creation.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/casecochée_creation.png
 
 Verifier l'apparition du msg d'erreur
     [Documentation]    Keywords qui verifie l'appariton du message d'erreur
     Wait Until Element Is Visible    ${message_error}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/erreur_creation.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/erreur_creation.png
 
 Saisir les données d'inscription
     [Arguments]    ${Prenom1}    ${nom1}    ${adresse_mail1}    ${mot_pass1}    ${Num_tele1}
@@ -33,7 +33,7 @@ Saisir les données d'inscription
     Input Text    ${adresse_mail}    ${adresse_mail1}
     Input Password    ${mot_pass}    ${mot_pass1}
     Input Text    ${Num_tele}    ${Num_tele1}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/infos_creation.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/infos_creation.png
 
 Cliquer sur le bouton creer votre compte
     [Documentation]    Keywords qui clique sur le bouton de création de compte
@@ -45,10 +45,10 @@ Deconnecter
     Wait Until Page Contains Element    //header[@class='-df -i-ctr -pvs -phm -bb -mh-48px']
     Wait Until Page Contains Element    ${button_name}
     Click Element    ${button_name}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Deconnexion/avantdeco_deconnexion.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/avantdeco_deconnexion.png
     Wait Until Page Contains Element    ${button_logout}
     Click Element    ${button_logout}
-    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Deconnexion/apresdeco_deconnexion.png
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Resultats/apresdeco_deconnexion.png
     Wait Until Page Contains Element    ${button_popup}
     Click Button    ${button_popup}
     Wait Until Page Contains Element    //label[@class='trig -df -i-ctr -fs16']
