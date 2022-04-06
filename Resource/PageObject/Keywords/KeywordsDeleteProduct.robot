@@ -3,12 +3,10 @@ Documentation     Cette bibliotheque contient des Keywords qui suppriment un pro
 
 *** Keywords ***
 Cliquer sur le bouton panier
-    [Arguments]    ${btn_panier}
     [Documentation]    Keyword qui clique sur le bouton panier.
     Click Element    ${btn_panier}
 
 Verifier l'apparition des elts
-    [Arguments]    ${image}    ${titre}    ${prix}    ${lien_suppr}
     [Documentation]    Keyword qui verifie l'appariton des elts
     Wait Until Element Is Visible    ${image}
     Wait Until Element Is Visible    ${titre}
@@ -17,23 +15,19 @@ Verifier l'apparition des elts
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/panier_supprimer.png
 
 Cliquer sur le lien Supprimer
-    [Arguments]    ${lien_suppr}
     [Documentation]    Keyword qui clique sur le lien supprimer
     Click Element    ${lien_suppr}
 
 Verifier l'apparition d'element
-    [Arguments]    ${btn_retirer}
     [Documentation]    Keyword qui verifie l'apparition de l'element
     Wait Until Element Is Visible    ${btn_retirer}
 
 Cliquer sur le bouton retirer
-    [Arguments]    ${btn_retirer}
     [Documentation]    Keyword qui clique sur le bouton retirer
     Click Element    ${btn_retirer}
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/delete_supprimer.png
 
 Verifier l'apparition du msg
-    [Arguments]    ${msg_supp}
     [Documentation]    Keyword qui verifie l'apparition du message.
     Wait Until Element Is Visible    ${msg_supp}
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/msg_supprimer.png

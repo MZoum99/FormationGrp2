@@ -17,9 +17,9 @@ Verifier le message d'erreur
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SignIn/msgerreur_signin.png
 
 Verifier la navigation
-    [Arguments]    ${url1}
     [Documentation]    Keyword responsable de vérifier la navigation.
     Wait Until Page Contains Element    ${url1}
+    #A enlever apres integration de creation de compte
     Click Element    //a[@class='-df -i-ctr -mra']
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SignIn/navigation_signin.png
 

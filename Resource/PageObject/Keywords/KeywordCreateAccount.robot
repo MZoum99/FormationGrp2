@@ -3,7 +3,6 @@ Documentation     Cette bibliotheque contient des Keywords pour la creation de c
 
 *** keywords ***
 Cliquer sur lien
-    [Arguments]    ${url_creation1}
     [Documentation]    Keywords qui clique sur le lien
     Open Browser    ${url_creation1}    Chrome
     maximize browser window
@@ -11,7 +10,6 @@ Cliquer sur lien
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/signup_creation.png
 
 Cocher la première case
-    [Arguments]    ${case_accepter1}
     [Documentation]    Keywords qui coche la premiere case
     Click Element    ${case_accepter1}
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Creationcompte/casecochée_creation.png
