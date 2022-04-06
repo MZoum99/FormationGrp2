@@ -1,0 +1,12 @@
+*** Settings ***
+Library           DateTime
+Library           SeleniumLibrary
+Resource          ./PageObject/Keywords/KeywordsCommune.robot
+Resource          ./PageObject/Keywords/KeywordsAddProduct.robot
+Resource          ./PageObject/Locators/Locators.robot
+Resource          ./PageObject/TestData/TestData.robot
+Resource          ./PageObject/Keywords/KeywordsSignIn.robot
+Resource          ./PageObject/Keywords/KeywordsDeleteProduct.robot
+Resource          ./PageObject/Keywords/KeywordIncreaseProduct.robot
+Resource          ./PageObject/Keywords/KeywordCreateAccount.robot
+Resource          ./PageObject/Keywords/KeywordDeconnecter.robot
