@@ -33,7 +33,7 @@ Authentification a jumia
 
 Authentification a jumia avec donnes erronees
     [Arguments]    ${email1}    ${pwd1}
-    #Cliquer sur le lien
+    Cliquer sur le lien
     Verifier l'apparition des elements
     Saisir les données    ${email1}    ${pwd1}
     Cliquer sur le bouton Connexion

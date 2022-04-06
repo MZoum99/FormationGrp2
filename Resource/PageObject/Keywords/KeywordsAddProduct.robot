@@ -5,7 +5,7 @@ Documentation     Cette bibliotheque contient des Keywords qui ajoute un produit
 Rechercher Le Produit
     [Arguments]    ${produit_recherche}
     [Documentation]    Keywords qui recherche le produit
-    Wait Until Page Contains Element    //button[@aria-label='Fermer la bannière']
+    #Wait Until Page Contains Element    //button[@aria-label='Fermer la bannière']
     Wait Until Page Contains Element    ${xpath_research}
     Input Text    ${xpath_research}    ${produit_recherche}
     Press Keys    ${xpath_research}    ENTER

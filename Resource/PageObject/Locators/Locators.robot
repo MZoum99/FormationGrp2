@@ -32,8 +32,8 @@ ${btn_panier}     //a[@class="-df -i-ctr -gy8 -hov-or5 -phs -fs16"]//span[@id="c
 ${image}          //div[@class="img-c"]//img[@class="img"]
 ${titre}          //div[@class="main"]//h3[@class="name"]
 ${prix}           //div[@class="sd"]//div[@class="prc"]
-${lien_suppr}     //button[@class="btn _def _ti -mra" and contains(.,"Supprimer")]
+${lien_suppr}     //button[@class="btn _def _ti -mra" and contains(.,"Supprimer")] [@data-pop-dyn-id="SU746OT17WY1ENAFAMZ-48416264"]
 ${btn_retirer}    //button[@class="btn _prim _i -fw -fh" ]//span[contains(.,"Retirer le produit")]
 ${msg_supp}       //div[@class="cnt"]
 #xpath augmenter la quantité du produit dans le panier
-${xpath_increase}    //button[@class='btn _prim _qty -paxs'] [@aria-label='augmenter la quantité panier']
+${xpath_increase}    //form[@data-id='SU746OT17WY1ENAFAMZ']//button[@class='btn _prim _qty -paxs'] [@aria-label='augmenter la quantité panier']
