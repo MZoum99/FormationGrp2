@@ -40,12 +40,29 @@ Cliquer sur le bouton creer votre compte
     Run Keyword And Ignore Error    Scroll Element Into View    ${btn_inscription}
     Click Element    ${btn_inscription}
 
+Deconnecter
+    [Documentation]    Keywords qui permet de se deconnecter du compte
+    Wait Until Page Contains Element    //header[@class='-df -i-ctr -pvs -phm -bb -mh-48px']
+    Wait Until Page Contains Element    ${button_name}
+    Click Element    ${button_name}
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Deconnexion/avantdeco_deconnexion.png
+    Wait Until Page Contains Element    ${button_logout}
+    Click Element    ${button_logout}
+    Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/Deconnexion/apresdeco_deconnexion.png
+    Wait Until Page Contains Element    ${button_popup}
+    Click Button    ${button_popup}
+    Wait Until Page Contains Element    //label[@class='trig -df -i-ctr -fs16']
+    Click Element    //label[@class='trig -df -i-ctr -fs16']
+    Wait Until Page Contains Element    //a[@class='btn _prim -fw _md']
+    Click Element    //a[@class='btn _prim -fw _md']
+
 Creation de compte
     [Arguments]    ${Prenom}    ${nom}    ${adresse_mail}    ${mot_pass}    ${Num_tele}
     [Documentation]    Test case qui permet la creation d'un compte Jumia
     #Cliquer sur lien
     Saisir les données d'inscription    ${Prenom}    ${nom}    ${adresse_mail}    ${mot_pass}    ${Num_tele}
     Cliquer sur le bouton creer votre compte
+    Deconnecter
 
 Creation du compte avec données incorrect
     [Arguments]    ${Prenom1}    ${nom1}    ${adresse_mail1}    ${mot_pass1}    ${Num_tele1}

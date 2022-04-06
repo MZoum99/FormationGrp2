@@ -7,7 +7,8 @@ Augmenter La Quantité
     [Documentation]    Keywords qui augmente le nombre de la quantite
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/QuantiteProduit/avant_quantite.png
     Wait Until Page Contains Element    ${xpath_increase}
-    Wait Until Keyword Succeeds    ${click_number}    1 seconds    Click Element    ${xpath_increase}
+    ${times}=    catenate    SEPARATOR=    ${click_number}    x
+    Repeat Keyword    ${times}    Click Button    ${xpath_increase}
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/QuantiteProduit/apres_quantite.png
 
 Incrementer Nombre Produit
