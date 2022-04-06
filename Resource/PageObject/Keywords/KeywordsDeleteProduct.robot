@@ -33,9 +33,9 @@ Verifier l'apparition du msg
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SuppressionProduit/msg_supprimer.png
 
 Supprimer un produit
-    Cliquer sur le bouton panier    ${btn_panier}
-    Verifier l'apparition des elts    ${image}    ${titre}    ${prix}    ${lien_suppr}
-    Cliquer sur le lien Supprimer    ${lien_suppr}
-    Verifier l'apparition d'element    ${btn_retirer}
-    Cliquer sur le bouton retirer    ${btn_retirer}
-    Verifier l'apparition du msg    ${msg_supp}
+    Cliquer sur le bouton panier
+    Verifier l'apparition des elts
+    Cliquer sur le lien Supprimer
+    Verifier l'apparition d'element
+    Cliquer sur le bouton retirer
+    Verifier l'apparition du msg

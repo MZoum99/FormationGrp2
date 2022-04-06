@@ -20,21 +20,21 @@ Verifier la navigation
     [Documentation]    Keyword responsable de vérifier la navigation.
     Wait Until Page Contains Element    ${url1}
     #A enlever apres integration de creation de compte
-    Click Element    //a[@class='-df -i-ctr -mra']
+    #Click Element    //a[@class='-df -i-ctr -mra']
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/SignIn/navigation_signin.png
 
 Authentification a jumia
     [Arguments]    ${email1}    ${pwd1}
-    #Cliquer sur le lien    ${url_login}
-    Verifier l'apparition des elements    ${email}    ${pwd}    ${btn_cnx}    ${pwd_oublie}
+    #Cliquer sur le lien
+    Verifier l'apparition des elements
     Saisir les données    ${email1}    ${pwd1}
-    Cliquer sur le bouton Connexion    ${btn_cnx}
-    Verifier la navigation    ${url1}
+    Cliquer sur le bouton Connexion
+    Verifier la navigation
 
 Authentification a jumia avec donnes erronees
     [Arguments]    ${email1}    ${pwd1}
-    Cliquer sur le lien    ${url_login}
-    Verifier l'apparition des elements    ${email}    ${pwd}    ${btn_cnx}    ${pwd_oublie}
+    #Cliquer sur le lien
+    Verifier l'apparition des elements
     Saisir les données    ${email1}    ${pwd1}
-    Cliquer sur le bouton Connexion    ${btn_cnx}
+    Cliquer sur le bouton Connexion
     Verifier le message d'erreur

@@ -22,7 +22,6 @@ Cliquer Le Produit
 Cliquer Le Bouton Acheter
     [Documentation]    Keyword qui clique sur le bouton acheter
     Wait Until Page Contains Element    ${xpath_buy}
-    Click Button    ${xpath_button}
     Run Keyword And Ignore Error    Scroll Element Into View    ${xpath_buy}
     Capture Page Screenshot    C:/Users/mzoumhan/Formation/Screenshots/AjoutProduit/produit_ajout.png
     Click Button    ${xpath_buy}
